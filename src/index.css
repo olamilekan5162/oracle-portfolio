@@ -58,17 +58,27 @@
 .nav-container ul {
   display: flex;
   flex-direction: row;
+  align-items: center;
   list-style-type: none;
   gap: 10px;
 }
 
-a {
+.nav-container a {
   text-decoration: none;
   color: #0f172a;
   font-size: 20px;
+  font-weight: 500;
 }
 
-a:hover {
+.nav-container a:hover {
   color: #f97316;
-  text-underline-position: below;
+}
+
+.nav-container img {
+  height: 30px;
+  width: 30px;
+  filter: invert(7%) sepia(10%) saturate(4954%) hue-rotate(189deg) brightness(100%) contrast(96%);
+}
+.nav-container img:hover {
+  filter: invert(64%) sepia(58%) saturate(4171%) hue-rotate(156deg) brightness(87%) contrast(101%);
 }

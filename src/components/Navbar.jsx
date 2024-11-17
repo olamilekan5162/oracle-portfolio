@@ -1,3 +1,6 @@
+import night from '../assets/night.svg'
+import day from '../assets/day.svg'
+
 const Navbar = () => {
     return ( 
         <div className="nav-container">
@@ -6,7 +9,7 @@ const Navbar = () => {
                 <li><a href="">Home</a></li>
                 <li><a href="">About Us</a></li>
                 <li><a href="">Contact Us</a></li>
-                <li><img src="" alt="toggle mode" /></li>
+                <li><img src={day} alt="toggle mode" /></li>
             </ul>
 
         </div>
