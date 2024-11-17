@@ -107,10 +107,17 @@
   font-size: 35px;
 }
 
+.hero-container .me-text {
+  max-width: 700px;
+  word-wrap: break-word;
+  text-align: justify;
+}
+
 .hero-container .hero-links {
   display: flex;
   flex-direction: row;
   gap: 10px;
+  align-items: center;
 }
 
 .hero-links button {
@@ -118,5 +125,22 @@
   width: 90px;
   padding: 10px;
   border: 3px solid #f97316;
+  color: #f97316;
   background-color: transparent;
+}
+
+.hero-links button:hover {
+  border: 3px solid #f97316;
+  background-color: #f97316;
+  color: white;
+}
+
+.hero-links img {
+  filter: invert(7%) sepia(10%) saturate(4954%) hue-rotate(189deg) brightness(100%) contrast(96%);
+  height: 40px;
+  width: auto;
+}
+
+.hero-links img:hover {
+  filter: invert(60%) sepia(37%) saturate(6305%) hue-rotate(352deg) brightness(100%) contrast(96%);
 }

@@ -4,7 +4,7 @@ import day from '../assets/day.svg'
 const Navbar = () => {
     return ( 
         <div className="nav-container">
-            <h1>RT.</h1>
+            <h1>OO.</h1>
             <ul className="nav-links">
                 <li><a href="">Home</a></li>
                 <li><a href="">About Us</a></li>
