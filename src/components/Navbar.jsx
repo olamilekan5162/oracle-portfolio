@@ -1,4 +1,4 @@
-import night from '../assets/night.svg'
+// import night from '../assets/night.svg'
 import day from '../assets/day.svg'
 
 const Navbar = () => {
