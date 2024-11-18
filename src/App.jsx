@@ -3,6 +3,7 @@ import Hero from './components/LandingSection'
 import Navbar from './components/Navbar'
 import Profile from './components/GitHubProfile'
 import Skills from './components/Skills'
+import Contact from './components/Contact'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <Hero />
       <Profile />
       <Skills />
+      <Contact />
     </div>
   )
 }
