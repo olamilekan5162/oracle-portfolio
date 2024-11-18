@@ -111,6 +111,7 @@
   max-width: 700px;
   word-wrap: break-word;
   text-align: justify;
+  font-size: large;
 }
 
 .hero-container .hero-links {
@@ -166,10 +167,10 @@
 
 .project-wrapper .projects {
   min-height: 300px;
-  width: 300px;
+  width: 400px;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 0 10px #e2e8f0;
+  box-shadow: 0 0 15px #d4d4d8;
   align-items: center;
   justify-content: center;
   padding: 20px;
@@ -180,24 +181,50 @@
 }
 
 .projects h1 {
-  font-size: 20px;
+  font-size: 30px;
 }
 
-.projects p {
+.projects .text {
   text-align: center;
+  font-size: large;
 }
-.projects .stack {
+.projects .stacks {
   font-weight: 500;
+  text-align: center;
+  word-spacing: 10px;
 }
 .projects .image-wrap {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 5px;
-  border: 1px solid red;
 }
 
 .image-wrap img {
   height: 30px;
   width: auto;
+  filter: invert(7%) sepia(10%) saturate(4954%) hue-rotate(189deg) brightness(100%) contrast(96%);
+}
+
+.image-wrap img:hover {
+  filter: invert(60%) sepia(37%) saturate(6305%) hue-rotate(352deg) brightness(100%) contrast(96%);
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  align-items: center;
+  gap: 20px;
+}
+
+.skills-container h1 {
+  font-size: 50px;
+}
+
+.skills-container .skills-wrapper {
+  display: flex;
+  flex-direction: row;
+  min-width: 700px;
+  flex-wrap: wrap;
 }
