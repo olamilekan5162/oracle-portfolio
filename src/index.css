@@ -92,6 +92,7 @@
   flex-direction: column;
   margin-top: 70px;
   gap: 40px;
+  justify-content: center;
   align-items: center;
 }
 

@@ -1,7 +1,7 @@
 import github from '../assets/github.svg'
 import open from '../assets/open-in-new.svg'
 
-const Profile = () => {
+const Profile = (githubUsers) => {
   return (
     <div className="project-container">
       <h1>PROJECTS</h1>
