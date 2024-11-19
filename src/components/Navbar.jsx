@@ -6,9 +6,10 @@ const Navbar = () => {
         <div className="nav-container">
             <h1>OO.</h1>
             <ul className="nav-links">
-                <li><a href="">Home</a></li>
-                <li><a href="">About Us</a></li>
-                <li><a href="">Contact Us</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#skill">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li><img src={day} alt="toggle mode" /></li>
             </ul>
 

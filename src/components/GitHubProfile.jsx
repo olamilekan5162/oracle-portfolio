@@ -4,8 +4,8 @@ import open from '../assets/open-in-new.svg'
 const Profile = ({githubUsers}) => {
 
   return (
-    <div className="profile-container">
-      <h1>PROJECTS</h1>
+    <div id="profile" className="profile-container">
+      <h1>PROFILES</h1>
       <div className="profile-wrapper">
         {githubUsers.map((user) => {
           return (
