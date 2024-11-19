@@ -8,23 +8,33 @@ import Footer from './components/Footer'
 
 const App = () => {
   const [githubUsers, setGithubUsers] = useState([])
+
+  
   
   useEffect(() => {
     const fetchUsers = async () => {
-      const res = await fetch();
-      if (!res.ok){
-        throw new Error ('Cannot fetch github Users');
-        const data = res.json();
-        setGithubUsers(data);
+      try{
+        const res = await fetch('https://api.github.com/users');
+        if (!res.ok){
+          throw new Error ('Cannot fetch github Users');
+        }
+        const data = await res.json();
+        setGithubUsers(data);    
+      }
+      catch (e){
+        alert(e)
       }
     }
-  })
+
+    fetchUsers()
+    
+  },[])
 
   return (
     <div className="main-container">
       <Navbar />
       <Hero />
-      <Profile githubUsers = {githubUsers} />
+      <Profile githubUsers = {githubUsers}  />
       <Skills />
       <Contact />
       <Footer />
