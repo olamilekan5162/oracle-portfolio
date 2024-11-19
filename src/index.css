@@ -149,7 +149,7 @@
   filter: invert(60%) sepia(37%) saturate(6305%) hue-rotate(352deg) brightness(100%) contrast(96%);
 }
 
-.project-container {
+.profile-container {
   display: flex;
   flex-direction: column;
   margin-top: 70px;
@@ -157,10 +157,10 @@
   gap: 20px;
 }
 
-.project-container h1 {
+.profile-container h1 {
   font-size: 50px;
 }
-.project-container .project-wrapper {
+.profile-container .profile-wrapper {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -169,7 +169,7 @@
   align-items: center;
 }
 
-.project-wrapper .projects {
+.profile-wrapper .profile {
   min-height: 300px;
   width: 400px;
   display: flex;
@@ -180,25 +180,35 @@
   padding: 20px;
   gap: 20px;
 }
-.project-wrapper .projects:hover,
+
+.profile-wrapper .profile:hover,
 .skills-container .skills:hover {
   scale: 1.03;
 }
 
-.projects h1 {
-  font-size: 30px;
+.profile .profile-image-wrap {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  align-items: center;
 }
 
-.projects .text {
+.profile-image-wrap img{
+  height: 100px;
+  width: 100px;
+}
+
+.profile .name {
   text-align: center;
   font-size: large;
-}
-.projects .stacks {
   font-weight: 500;
+}
+.profile .stacks {
   text-align: center;
   word-spacing: 10px;
 }
-.projects .image-wrap {
+.profile .image-wrap {
   display: flex;
   flex-direction: row;
   align-items: center;

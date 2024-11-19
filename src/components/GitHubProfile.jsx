@@ -4,46 +4,26 @@ import open from '../assets/open-in-new.svg'
 const Profile = ({githubUsers}) => {
 
   return (
-    <div className="project-container">
-      {/* {githubUsers && githubUsers.map((user) => {
-        return (
-          <div key={user.id}>
-          <h1>{user.login}</h1>
-        </div>
-        )
-        
-      })} */}
+    <div className="profile-container">
       <h1>PROJECTS</h1>
-      <div className="project-wrapper">
-        <div className="projects">
-          <h1>Project 1</h1>
-          <p className="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, nostrum consequatur neque quaerat</p>
-          <p className="stacks">Html Javascript Django</p>
-          <div className="image-wrap">
-            <img src={github} alt="github" />
-            <img src={open} alt="" />
-          </div>
-        </div>
+      <div className="profile-wrapper">
+        {githubUsers.map((user) => {
+          return (
+            <div className="profile" key={user.id}>
+              <div className='profile-image-wrap'>
+                <img src={user.avatar_url} alt="profile image" />
+              </div>
+              <p className="name">{user.login}</p>
+              <p className="stacks">Followers: {Math.floor(Math.random() * 100)}</p>
+              <div className="image-wrap">
+                <a href={user.html_url}> <img src={github} alt="github" /> </a>
+                <a href={user.html_url} target='blank'> <img src={open} alt="" /> </a>
+              </div>
+            </div>
+          )
 
-        <div className="projects">
-          <h1>Project 2</h1>
-          <p className="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, nostrum consequatur neque quaerat</p>
-          <p className="stacks">Html Javascript Django</p>
-          <div className="image-wrap">
-            <img src={github} alt="github" />
-            <img src={open} alt="" />
-          </div>
-        </div>
-
-        <div className="projects">
-          <h1>Project 3</h1>
-          <p className="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, nostrum consequatur neque quaerat</p>
-          <p className="stacks">Html Javascript Django</p>
-          <div className="image-wrap">
-            <img src={github} alt="github" />
-            <img src={open} alt="" />
-          </div>
-        </div>
+        })}
+        
         
       </div>
     </div>

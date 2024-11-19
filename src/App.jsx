@@ -13,7 +13,7 @@ const App = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try{
-        const res = await fetch('https://api.github.com/users');
+        const res = await fetch('https://api.github.com/users?per_page=5');
         if (!res.ok){
           throw new Error ('Cannot fetch github Users');
         }

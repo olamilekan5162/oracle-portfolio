@@ -6,15 +6,13 @@ const Hero = () => {
         <div className="hero-container">
             <h1 className="me">Hi, I am <span>Opeyemi Olalekan</span></h1>
             <h1 className="me-do">A Full Stack Engineer</h1>
-            <p className='me-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, nostrum consequatur neque quaerat veritatis sed corrupti fugiat, veniam corporis vel ad quidem exercitationem amet soluta fugit iure dolores magnam totam, aliquam porro ex nisi error? Optio fuga repellendus magni neque.</p>
+            <p className='me-text'>I am Opeyemi Olalekan, a passionate Full-Stack Developer skilled in Python (Django), HTML, CSS, JavaScript, and Java. Currently, I am expanding my expertise by learning React to build modern, responsive web applications. I enjoy creating dynamic, user-friendly solutions and am always eager to take on new challenges and continue learning.</p>
             <div className="hero-links">
                 <button>resume</button>
                 <img src={github} alt="github" />
                 <img src={linkedin} alt="linkedin" />
             </div>
         </div>
-        
-        
      );
 }
  
