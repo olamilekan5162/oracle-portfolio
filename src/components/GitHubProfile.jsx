@@ -3,10 +3,16 @@ import open from '../assets/open-in-new.svg'
 
 const Profile = ({githubUsers}) => {
 
-  console.log(githubUsers)
-  
   return (
     <div className="project-container">
+      {/* {githubUsers && githubUsers.map((user) => {
+        return (
+          <div key={user.id}>
+          <h1>{user.login}</h1>
+        </div>
+        )
+        
+      })} */}
       <h1>PROJECTS</h1>
       <div className="project-wrapper">
         <div className="projects">

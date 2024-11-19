@@ -7,9 +7,8 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 
 const App = () => {
-  const [githubUsers, setGithubUsers] = useState([])
-
-  
+  const [githubUsers, setGithubUsers] = useState(null)
+  const [error, setError] = useState(null)
   
   useEffect(() => {
     const fetchUsers = async () => {
@@ -19,22 +18,24 @@ const App = () => {
           throw new Error ('Cannot fetch github Users');
         }
         const data = await res.json();
+        console.log(data)
         setGithubUsers(data);    
       }
       catch (e){
-        alert(e)
+        setError(e.message)
       }
     }
 
     fetchUsers()
-    
+
   },[])
 
   return (
     <div className="main-container">
       <Navbar />
       <Hero />
-      <Profile githubUsers = {githubUsers}  />
+      {error && <div>{error}</div>}
+      { githubUsers && <Profile githubUsers = {githubUsers}/>}
       <Skills />
       <Contact />
       <Footer />
