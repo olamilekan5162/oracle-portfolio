@@ -1,7 +1,8 @@
+// import { useState } from 'react'
 // import night from '../assets/night.svg'
-import day from '../assets/day.svg'
+// import day from '../assets/day.svg'
 
-const Navbar = () => {
+const Navbar = ({mode, toggleMode}) => {
     return ( 
         <div className="nav-container">
             <h1>OO.</h1>
@@ -10,7 +11,7 @@ const Navbar = () => {
                 <li><a href="#profile">Profile</a></li>
                 <li><a href="#skill">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><img src={day} alt="toggle mode" /></li>
+                <li><img src={mode} alt="toggle mode" onClick = {toggleMode} /></li>
             </ul>
 
         </div>
