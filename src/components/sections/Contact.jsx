@@ -1,19 +1,49 @@
 import { Mail, Send } from "lucide-react";
-import Card from "../ui/Card";
+import { Card, CardTitle } from "../ui/Card";
 import Button from "../ui/Button";
 import { developerInfo } from "../../lib/data";
-
-function SubmitButton() {
-  const { pending } = useFormStatus();
-  return (
-    <Button type="submit" disabled={pending} className="w-full">
-      {pending ? "Sending..." : "Send Message"}
-      <Send className="ml-2 h-4 w-4" />
-    </Button>
-  );
-}
+import { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 export default function ContactSection() {
+  const [loading, setLoading] = useState(false);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleMail = (e) => {
+    e.preventDefault();
+    setLoading(true);
+    var templateParams = {
+      name: name,
+      email: email,
+      time: new Date().toLocaleString(),
+      message: message,
+    };
+
+    emailjs
+      .send(
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
+        templateParams,
+        {
+          publicKey: import.meta.env.VITE_PUBLIC_KEY,
+        }
+      )
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          setLoading(false);
+          setEmail("");
+          setName("");
+          setMessage("");
+        },
+        (error) => {
+          console.log("FAILED...", error);
+          setLoading(false);
+        }
+      );
+  };
   return (
     <section id="contact" className="w-full py-16 md:py-24 bg-secondary">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -25,13 +55,16 @@ export default function ContactSection() {
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          <Card title={"Send me a message"}>
-            <form className="space-y-4">
+          <Card className={"p-6"}>
+            <CardTitle>Send me a message</CardTitle>
+            <form className="space-y-4" onSubmit={handleMail}>
               <input
                 name="name"
                 placeholder="Your Name"
                 className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
                 required
+                value={name}
+                onChange={(e) => setName(e.target.value)}
               />
               <input
                 name="email"
@@ -39,6 +72,8 @@ export default function ContactSection() {
                 placeholder="Your Email"
                 className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
                 required
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
               <textarea
                 name="message"
@@ -46,10 +81,15 @@ export default function ContactSection() {
                 className="flex min-h-20 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
                 required
                 minLength={10}
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
               />
-              <Button type={"submit"} className={"w-full"}>
-                Send Message
-                <Send className="inline ml-2 h-4 w-4" />
+              <Button
+                type={"submit"}
+                className={"w-full flex items-center justify-center"}
+              >
+                {loading ? "Sending Message..." : "Send Message"}
+                {!loading && <Send className="ml-2 h-4 w-4" />}
               </Button>
             </form>
           </Card>

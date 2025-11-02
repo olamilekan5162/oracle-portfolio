@@ -40,8 +40,12 @@ export default function HeroSection() {
                 variant="outline"
                 className={"w-full sm:w-auto"}
               >
-                <a href={developerInfo.resumeUrl} download>
-                  <Download className="inline mr-2 h-4 w-4" />
+                <a
+                  href={developerInfo.resumeUrl}
+                  download
+                  className="flex items-center"
+                >
+                  <Download className="mr-2 h-4 w-4" />
                   Download CV
                 </a>
               </Button>

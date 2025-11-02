@@ -1,5 +1,5 @@
 import { skills, developerInfo } from "../../lib/data";
-import Card from "../ui/Card";
+import { Card, CardTitle } from "../ui/Card";
 import { Progress } from "../ui/Progress";
 
 export default function SkillsSection() {
@@ -21,10 +21,10 @@ export default function SkillsSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {Object.keys(categorizedSkills).map((category) => (
             <Card
-              title={category}
               key={category}
-              className="hover:shadow-primary/10 hover:shadow-lg transition-shadow duration-300"
+              className="hover:shadow-primary/10 hover:shadow-lg transition-shadow duration-300 p-6"
             >
+              <CardTitle>{category}</CardTitle>
               <div className="space-y-6">
                 {categorizedSkills[category].map((skill) => (
                   <div key={skill.name}>

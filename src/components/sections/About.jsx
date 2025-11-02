@@ -1,5 +1,5 @@
 import { CheckCircle } from "lucide-react";
-import Card from "../ui/Card";
+import { Card, CardTitle } from "../ui/Card";
 
 const technologies = [
   "React",
@@ -7,7 +7,7 @@ const technologies = [
   "TypeScript",
   "JavaScript",
   "Tailwind CSS",
-  "Node.js",
+  "Python",
   "Firebase",
   "Git",
 ];
@@ -36,13 +36,14 @@ export default function AboutSection() {
                 of the industry.
               </p>
               <p>
-                When I'm not coding, you can find me exploring new coffee shops,
-                reading tech blogs, or contributing to open-source projects.
+                When I'm not coding, I enjoy reading tech blogs, exploring new
+                ideas, and challenging myself with problem-solving games.
               </p>
             </div>
           </div>
           <div className="md:col-span-2">
-            <Card title={"My Tech Stack"}>
+            <Card className="p-6">
+              <CardTitle>My Tech Stack</CardTitle>
               <ul className="grid grid-cols-2 gap-4">
                 {technologies.map((tech) => (
                   <li key={tech} className="flex items-center gap-2 text-sm">
