@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
-// import { Menu, X } from "lucide-react";
+import { Menu, X, Sun, Moon } from "lucide-react";
 // import { Button } from "@/components/ui/button";
 // import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 // import { ThemeToggle } from "@/components/theme-toggle";
-import { NavLink, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { developerInfo } from "../lib/data";
+import Button from "./ui/Button";
+import MobileMenu from "./modals/MobileMenu";
 
 const navLinks = [
   { href: "#about", label: "About" },
@@ -53,7 +55,7 @@ export default function Header() {
 
   return (
     <nav
-      className={`fixed top-0 right-0 left-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 right-0 left-0 z-10 transition-all duration-300 ${
         isScrolled
           ? "bg-background/80 border-b border-border backdrop-blur-sm"
           : "bg-transparent"
@@ -85,9 +87,33 @@ export default function Header() {
             ))}
           </div>
 
-          {/* <div className="flex items-center space-x-2">
-            <ThemeToggle />
+          <div className="flex items-center space-x-2">
+            <Button
+              variant="ghost"
+              size="icon"
+              className="flex items-center justify-center cursor-pointer"
+            >
+              {/* <Sun
+                size={18}
+                className="rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0"
+              /> */}
+              <Moon
+                size={18}
+                className="rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100"
+              />
+            </Button>
             <div className="md:hidden">
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={() => setIsMobileMenuOpen(true)}
+                className="flex items-center justify-center cursor-pointer"
+              >
+                <Menu size={18} />
+              </Button>
+            </div>
+
+            {/* <div className="md:hidden">
               <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
                 <SheetTrigger asChild>
                   <Button variant="ghost" size="icon">
@@ -115,10 +141,15 @@ export default function Header() {
                   </div>
                 </SheetContent>
               </Sheet>
-            </div>
-          </div> */}
+            </div> */}
+          </div>
         </div>
       </div>
+      <MobileMenu
+        isOpen={isMobileMenuOpen}
+        onClose={() => setIsMobileMenuOpen(false)}
+        isActive={activeSection}
+      />
     </nav>
   );
 }

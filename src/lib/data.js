@@ -44,33 +44,32 @@ export const projects = [
     githubUrl: "https://github.com/olamilekan5162/quickpay-frontend",
   },
   {
+    title: "Portfolio Website",
+    description:
+      "My personal portfolio website, built to showcase my skills and projects with a focus on simple and creative design.",
+    tags: ["React", "Tailwind", "Javascript", "Context Api"],
+    imageUrl:
+      "https://images.unsplash.com/photo-1642132652860-471b4228023e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxlLWNvbW1lcmNlJTIwc2l0ZXxlbnwwfHx8fDE3NjE3MTkxMDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    liveUrl: "https://otemitope.vercel.app/",
+    githubUrl: "https://github.com/olamilekan5162/oracle-portfolio",
+  },
+  {
     title: "Pharmaceutical Inventory Management System",
     description:
-      "EasiPharma is an Ai powered stock and inventory management system tailored for pharmaceutical businesses. The platform enables efficient tracking of stock levels, supplier management, order placements when inventory runs low and distribution of stocks",
-    tags: ["React", "TypeScript", "ShadCN UI", "Recharts"],
+      "EasiPharma is an Ai powered stock and inventory management system tailored for pharmaceutical businesses.",
+    tags: ["React", "Javascript", "Gemini AI", "Firebase"],
     imageUrl: "/easipharma.png",
     liveUrl: "https://easi-pharma.vercel.app/",
     githubUrl: "https://github.com/olamilekan5162/EasiPharma",
   },
   {
-    title: "Social Media App",
+    title: "E-learning App",
     description:
-      "A mobile-first social media application prototype allowing users to post updates, follow others, and interact with content.",
-    tags: ["React Native", "Firebase", "Tailwind CSS"],
-    imageUrl:
-      "https://images.unsplash.com/photo-1480694313141-fce5e697ee25?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtb2JpbGUlMjBhcHB8ZW58MHx8fHwxNzYxNzAxNTUzfDA&ixlib=rb-4.1.0&q=80&w=1080",
-    liveUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    title: "Portfolio Website V1",
-    description:
-      "My previous personal portfolio website, built to showcase my skills and projects with a focus on creative design and animations.",
-    tags: ["React", "Vite", "Framer Motion", "CSS Modules"],
-    imageUrl:
-      "https://images.unsplash.com/photo-1642132652860-471b4228023e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxlLWNvbW1lcmNlJTIwc2l0ZXxlbnwwfHx8fDE3NjE3MTkxMDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-    liveUrl: "#",
-    githubUrl: "#",
+      "MathLab is a web-based application designed to help students practice and improve their math skills.",
+    tags: ["React", "Firebase", "CSS3", "Gemini AI"],
+    imageUrl: "/mathlab.png",
+    liveUrl: "https://math-lab-theta.vercel.app/",
+    githubUrl: "https://github.com/olamilekan5162/mathLab",
   },
 ];
 
