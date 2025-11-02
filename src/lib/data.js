@@ -5,16 +5,17 @@ export const developerInfo = {
   role: "Frontend Developer",
   tagline: "Building digital experiences, one line of code at a time.",
   bio: "I’m a passionate frontend developer who loves building interactive, responsive, and user-focused web applications using React, Tailwind, and modern JavaScript tools. I thrive on solving complex problems and turning ideas into beautiful, functional products.",
+  image: "/headshot.jpg",
   email: "opeyemiolalekan481@gmail.com",
   github: "https://github.com/olamilekan5162",
   linkedin: "https://linkedin.com/in/opeyemi-olalekan-10864523a",
   twitter: "https://x.com/olamilekan5162",
-  resumeUrl: "#",
+  resumeUrl: "/temitope.pdf",
 };
 
 export const skills = [
   { name: "React / Next.js", level: 95, category: "Frontend" },
-  { name: "TypeScript", level: 90, category: "Frontend" },
+  { name: "TypeScript", level: 70, category: "Frontend" },
   { name: "JavaScript (ES6+)", level: 95, category: "Frontend" },
   { name: "Tailwind CSS", level: 98, category: "Frontend" },
   { name: "HTML5 & CSS3", level: 98, category: "Frontend" },
@@ -38,7 +39,8 @@ export const projects = [
     description:
       "A modern, responsive e-commerce site with features like product search, filtering, shopping cart, and a mock checkout process.",
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "Zustand"],
-    imageUrlId: "project-1",
+    imageUrl:
+      "https://images.unsplash.com/photo-1675651151785-ae8d84eddbea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx3ZWJzaXRlJTIwc2NyZWVuc2hvdHxlbnwwfHx8fDE3NjE3NTU0NTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
     liveUrl: "#",
     githubUrl: "#",
   },
@@ -47,7 +49,8 @@ export const projects = [
     description:
       "A comprehensive dashboard for managing projects, tasks, and team members. Includes charts for progress tracking.",
     tags: ["React", "TypeScript", "ShadCN UI", "Recharts"],
-    imageUrlId: "project-2",
+    imageUrl:
+      "https://images.unsplash.com/photo-1643421551137-2d84e7a28cc6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxkYXNoYm9hcmQlMjB1aXxlbnwwfHx8fDE3NjE2OTQzNjd8MA&ixlib=rb-4.1.0&q=80&w=1080",
     liveUrl: "#",
     githubUrl: "#",
   },
@@ -56,7 +59,8 @@ export const projects = [
     description:
       "A mobile-first social media application prototype allowing users to post updates, follow others, and interact with content.",
     tags: ["React Native", "Firebase", "Tailwind CSS"],
-    imageUrlId: "project-3",
+    imageUrl:
+      "https://images.unsplash.com/photo-1480694313141-fce5e697ee25?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtb2JpbGUlMjBhcHB8ZW58MHx8fHwxNzYxNzAxNTUzfDA&ixlib=rb-4.1.0&q=80&w=1080",
     liveUrl: "#",
     githubUrl: "#",
   },
@@ -65,7 +69,8 @@ export const projects = [
     description:
       "My previous personal portfolio website, built to showcase my skills and projects with a focus on creative design and animations.",
     tags: ["React", "Vite", "Framer Motion", "CSS Modules"],
-    imageUrlId: "project-4",
+    imageUrl:
+      "https://images.unsplash.com/photo-1642132652860-471b4228023e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxlLWNvbW1lcmNlJTIwc2l0ZXxlbnwwfHx8fDE3NjE3MTkxMDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
     liveUrl: "#",
     githubUrl: "#",
   },
@@ -73,24 +78,24 @@ export const projects = [
 
 export const experiences = [
   {
-    role: "Senior Frontend Developer",
-    company: "Tech Solutions Inc.",
-    period: "2021 - Present",
-    description:
-      "Led the development of a new client-facing dashboard using Next.js and TypeScript, improving performance by 30%. Mentored junior developers and established code review standards.",
-  },
-  {
     role: "Frontend Developer",
-    company: "Innovate Co.",
-    period: "2019 - 2021",
+    company: "LevelUp Inc.",
+    period: "2025 - Present",
     description:
-      "Developed and maintained responsive web applications for various clients using React and Redux. Collaborated with designers to translate Figma mockups into pixel-perfect UIs.",
+      "Contributing to the development and maintenance of an e-learning platform using React.js and TypeScript. Collaborate with the frontend team to implement new features, enhance UI performance, and ensure a smooth learning experience for users.",
   },
   {
-    role: "Junior Web Developer",
-    company: "Web Starters Agency",
-    period: "2018 - 2019",
+    role: "Python Developer Intern",
+    company: "Pauzii Techi",
+    period: "2023",
     description:
-      "Assisted in building marketing websites and landing pages using HTML, CSS, and JavaScript. Gained foundational experience in web development and version control with Git.",
+      "Worked on Python projects while mentoring junior interns in Python basics and best practices. Gained hands-on experience in scripting, problem-solving, and collaborative development.",
+  },
+  {
+    role: "Computer Instructor",
+    company: "Radiant Glory School",
+    period: "2022",
+    description:
+      "Designed and delivered interactive lesson plan. Taught foundational computer concepts, such as typing, mouse skills, and software applications",
   },
 ];

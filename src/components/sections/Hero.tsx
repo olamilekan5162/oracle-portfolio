@@ -1,4 +1,4 @@
-import heroImage from "../../assets/headshot.jpg";
+// import heroImage from "../../assets/headshot.jpg";
 import { Download, Eye, Github, Linkedin, Twitter } from "lucide-react";
 import { developerInfo } from "../../lib/data";
 import Button from "../ui/Button";
@@ -14,7 +14,7 @@ export default function HeroSection() {
           <div className="flex flex-col space-y-6">
             <div className="border-primary/50 relative mx-auto h-48 w-48 overflow-hidden rounded-full border-4 shadow-lg md:hidden">
               <img
-                src={heroImage}
+                src={developerInfo.image}
                 alt={developerInfo.name}
                 className="absolute inset-0 h-full w-full object-cover"
               />
@@ -76,9 +76,9 @@ export default function HeroSection() {
           <div className="hidden items-center justify-center md:flex">
             <div className="relative h-80 w-80 lg:h-96 lg:w-96">
               <div className="bg-primary/20 absolute inset-0 rounded-full blur-3xl"></div>
-              {heroImage && (
+              {developerInfo.image && (
                 <img
-                  src={heroImage}
+                  src={developerInfo.image}
                   alt={developerInfo.name}
                   width={400}
                   height={400}

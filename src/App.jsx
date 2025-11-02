@@ -4,6 +4,7 @@ import AboutSection from "./components/sections/About";
 import ContactSection from "./components/sections/Contact";
 import ExperienceSection from "./components/sections/Experience";
 import HeroSection from "./components/sections/Hero";
+import ProjectsSection from "./components/sections/Projects";
 import SkillsSection from "./components/sections/Skills";
 
 export default function App() {
@@ -14,7 +15,7 @@ export default function App() {
         <HeroSection />
         <AboutSection />
         <SkillsSection />
-        {/* <ProjectsSection /> */}
+        <ProjectsSection />
         <ExperienceSection />
         <ContactSection />
       </main>
