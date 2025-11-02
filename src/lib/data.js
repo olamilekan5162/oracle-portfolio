@@ -35,24 +35,22 @@ export const skills = [
 
 export const projects = [
   {
-    title: "E-commerce Platform",
+    title: "Qiuckpay App",
     description:
-      "A modern, responsive e-commerce site with features like product search, filtering, shopping cart, and a mock checkout process.",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Zustand"],
-    imageUrl:
-      "https://images.unsplash.com/photo-1675651151785-ae8d84eddbea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx3ZWJzaXRlJTIwc2NyZWVuc2hvdHxlbnwwfHx8fDE3NjE3NTU0NTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
-    liveUrl: "#",
-    githubUrl: "#",
+      "QuickPay is a micro-payment platform that allows small hustlers and vendors to generate instant payment links and share them with customers",
+    tags: ["React.js", "TypeScript", "Tailwind CSS", "Context Api"],
+    imageUrl: "/quickpay.png",
+    liveUrl: "https://quickpay-app.netlify.app/",
+    githubUrl: "https://github.com/olamilekan5162/quickpay-frontend",
   },
   {
-    title: "Project Management Dashboard",
+    title: "Pharmaceutical Inventory Management System",
     description:
-      "A comprehensive dashboard for managing projects, tasks, and team members. Includes charts for progress tracking.",
+      "EasiPharma is an Ai powered stock and inventory management system tailored for pharmaceutical businesses. The platform enables efficient tracking of stock levels, supplier management, order placements when inventory runs low and distribution of stocks",
     tags: ["React", "TypeScript", "ShadCN UI", "Recharts"],
-    imageUrl:
-      "https://images.unsplash.com/photo-1643421551137-2d84e7a28cc6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxkYXNoYm9hcmQlMjB1aXxlbnwwfHx8fDE3NjE2OTQzNjd8MA&ixlib=rb-4.1.0&q=80&w=1080",
-    liveUrl: "#",
-    githubUrl: "#",
+    imageUrl: "/easipharma.png",
+    liveUrl: "https://easi-pharma.vercel.app/",
+    githubUrl: "https://github.com/olamilekan5162/EasiPharma",
   },
   {
     title: "Social Media App",
