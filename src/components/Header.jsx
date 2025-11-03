@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { Menu, X, Sun, Moon } from "lucide-react";
 // import { Button } from "@/components/ui/button";
 // import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { developerInfo } from "../lib/data";
 import Button from "./ui/Button";
 import MobileMenu from "./modals/MobileMenu";
+import { ThemeContext } from "../context/ThemeContext";
 
 const navLinks = [
   { href: "#about", label: "About" },
@@ -20,6 +21,7 @@ export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("");
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { theme, toggleTheme } = useContext(ThemeContext);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -91,16 +93,20 @@ export default function Header() {
             <Button
               variant="ghost"
               size="icon"
+              onClick={toggleTheme}
               className="flex items-center justify-center cursor-pointer"
             >
-              {/* <Sun
-                size={18}
-                className="rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0"
-              /> */}
-              <Moon
-                size={18}
-                className="rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100"
-              />
+              {theme === "light" ? (
+                <Sun
+                  size={18}
+                  className="rotate-0 scale-100 transition-transform duration-300 "
+                />
+              ) : (
+                <Moon
+                  size={18}
+                  className="rotate-0 scale-100 transition-transform duration-300 "
+                />
+              )}
             </Button>
             <div className="md:hidden">
               <Button
