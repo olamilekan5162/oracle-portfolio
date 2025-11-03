@@ -43,7 +43,7 @@ export default function HeroSection() {
                 <a
                   href={developerInfo.resumeUrl}
                   download
-                  className="flex items-center"
+                  className="flex items-center justify-center"
                 >
                   <Download className="mr-2 h-4 w-4" />
                   Download CV

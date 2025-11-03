@@ -1,3 +1,4 @@
+import { Toaster } from "react-hot-toast";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import AboutSection from "./components/sections/About";
@@ -10,6 +11,16 @@ import SkillsSection from "./components/sections/Skills";
 export default function App() {
   return (
     <div className="bg-background flex min-h-dvh flex-col">
+      <Toaster
+        position="top-center"
+        toastOptions={{
+          style: {
+            border: "var(--color-border)",
+            background: "var(--color-background)",
+            color: "var(--color-muted-foreground)",
+          },
+        }}
+      />
       <Header />
       <main className="flex-1">
         <HeroSection />

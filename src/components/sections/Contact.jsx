@@ -4,6 +4,7 @@ import Button from "../ui/Button";
 import { developerInfo } from "../../lib/data";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
 
 export default function ContactSection() {
   const [loading, setLoading] = useState(false);
@@ -32,6 +33,12 @@ export default function ContactSection() {
       )
       .then(
         (response) => {
+          toast.success(
+            `Message sent successfully!. Thank you for reaching out, I'll get back to you soon.`,
+            {
+              duration: 5000,
+            }
+          );
           console.log("SUCCESS!", response.status, response.text);
           setLoading(false);
           setEmail("");
@@ -39,6 +46,7 @@ export default function ContactSection() {
           setMessage("");
         },
         (error) => {
+          toast.error("Failed to send the message. Please try again later.");
           console.log("FAILED...", error);
           setLoading(false);
         }
