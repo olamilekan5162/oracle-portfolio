@@ -108,7 +108,7 @@ export default function Header() {
                 />
               )}
             </Button>
-            <div className="md:hidden">
+            <div className="hidden">
               <Button
                 variant="ghost"
                 size="icon"
@@ -118,36 +118,6 @@ export default function Header() {
                 <Menu size={18} />
               </Button>
             </div>
-
-            {/* <div className="md:hidden">
-              <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
-                <SheetTrigger asChild>
-                  <Button variant="ghost" size="icon">
-                    <Menu className="h-6 w-6" />
-                    <span className="sr-only">Open menu</span>
-                  </Button>
-                </SheetTrigger>
-                <SheetContent
-                  side="left"
-                  className="bg-background w-full max-w-xs p-6"
-                >
-                  <div className="flex flex-col space-y-6">
-                    <Link
-                      to="/"
-                      onClick={() => setIsMobileMenuOpen(false)}
-                      className="text-foreground text-xl font-bold tracking-tighter"
-                    >
-                      {developerInfo.name}
-                    </Link>
-                    <nav className="flex flex-col space-y-4">
-                      {navLinks.map((link) => (
-                        <NavLink key={link.href} {...link} />
-                      ))}
-                    </nav>
-                  </div>
-                </SheetContent>
-              </Sheet>
-            </div> */}
           </div>
         </div>
       </div>
