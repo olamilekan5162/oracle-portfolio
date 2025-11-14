@@ -46,11 +46,11 @@ export const projects = [
   {
     title: "Portfolio Website",
     description:
-      "My personal portfolio website, built to showcase my skills and projects with a focus on simple and creative design.",
-    tags: ["React", "Tailwind", "Javascript", "Context Api"],
-    imageUrl: "/otemitope.png",
-    liveUrl: "https://otemitope.vercel.app/",
-    githubUrl: "https://github.com/olamilekan5162/oracle-portfolio",
+      "PropaTradex is a blockchain-powered real estate platform that enables secure property sales and rentals without intermediaries",
+    tags: ["React", "Tailwind", "Javascript", "Web3", "Iota move"],
+    imageUrl: "/propatradex.png",
+    liveUrl: "https://propatradex.vercel.app/",
+    githubUrl: "https://github.com/olamilekan5162/propatradex2.0",
   },
   {
     title: "Pharmaceutical Inventory Management System",

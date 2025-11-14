@@ -22,16 +22,19 @@ export default function AboutSection() {
             <div className="text-muted-foreground space-y-4">
               <p>
                 Hello! I'm Opeyemi, a dedicated frontend developer with a knack
-                for creating intuitive and performant web applications. My
-                journey into web development started from a fascination with how
-                beautiful design and powerful technology can come together to
-                create amazing user experiences.
+                for creating intuitive and performant web applications. I
+                graduated with a Bachelor’s degree in Computer Engineering from
+                the University of Ilorin, where I developed strong analytical
+                and technical skills that now shape how I approach software
+                design and problem-solving. My journey into web development grew
+                from a fascination with how beautiful design and powerful
+                technology can merge to create exceptional user experiences.
               </p>
               <p>
                 Over the years, I've honed my skills in the modern JavaScript
                 ecosystem, specializing in React and its frameworks. I am a firm
                 believer in writing clean, maintainable, and scalable code. I
-                enjoy collaborating with teams to bring ideas to life and am
+                enjoy collaborating with teams to bring ideas to life, and I am
                 always eager to learn new technologies to stay at the forefront
                 of the industry.
               </p>
