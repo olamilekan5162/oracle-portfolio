@@ -33,12 +33,12 @@ export default function SkillsSection() {
                 className="group border-border/50 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10 transition-shadow duration-300 p-6"
               >
                 <div className="flex flex-row items-center gap-4">
-                  <div className="bg-primary/10 p-3 rounded-lg text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
+                  <div className="bg-primary/10 p-3 mb-4 rounded-lg text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
                     <Icon className="h-6 w-6" />
                   </div>
                   <CardTitle>{category}</CardTitle>
                 </div>
-                <div className="grow pt-6">
+                <div className="grow pt-2">
                   <ul className="space-y-3">
                     {categorizedSkills[category].map((skill) => (
                       <li
