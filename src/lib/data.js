@@ -44,7 +44,7 @@ export const projects = [
     githubUrl: "https://github.com/olamilekan5162/quickpay-frontend",
   },
   {
-    title: "Portfolio Website",
+    title: "Blockchain Real Estate Website",
     description:
       "PropaTradex is a blockchain-powered real estate platform that enables secure property sales and rentals without intermediaries",
     tags: ["React", "Tailwind", "Javascript", "Web3", "Iota move"],
@@ -62,13 +62,13 @@ export const projects = [
     githubUrl: "https://github.com/olamilekan5162/EasiPharma",
   },
   {
-    title: "E-learning App",
+    title: "Decentralised music platform",
     description:
-      "MathLab is a web-based application designed to help students practice and improve their math skills.",
-    tags: ["React", "Firebase", "CSS3", "Gemini AI"],
-    imageUrl: "/mathlab.png",
-    liveUrl: "https://math-lab-theta.vercel.app/",
-    githubUrl: "https://github.com/olamilekan5162/mathLab",
+      "VibeTrax is a decentralized music platform built on the Sui blockchain, enabling upcoming artists to release music without upfront capital, collaborate transparently, and earn fair, on-chain revenue.",
+    tags: ["React", "Javascript", "Sui", "Blockchain"],
+    imageUrl: "/vibetrax.png",
+    liveUrl: "https://vibetrax-delta.vercel.app/",
+    githubUrl: "https://github.com/olamilekan5162/vibetrax",
   },
 ];
 
