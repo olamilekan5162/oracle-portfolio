@@ -35,6 +35,15 @@ export const skills = [
 
 export const projects = [
   {
+    title: "Level Up - Learn to Earn Platform",
+    description:
+      "Level Up is a revolutionary learn-to-earn platform that rewards developers for learning and contributing to the community.",
+    tags: ["React", "Javascript", "Hedera Hashgraph", "Supabase"],
+    imageUrl: "/levelup.png",
+    liveUrl: "https://levelup-curriculum.vercel.app/",
+    githubUrl: "https://github.com/levelupdevs1/levelup-curriculum",
+  },
+  {
     title: "Qiuckpay App",
     description:
       "QuickPay is a micro-payment platform that allows small hustlers and vendors to generate instant payment links and share them with customers",
@@ -51,15 +60,6 @@ export const projects = [
     imageUrl: "/propatradex.png",
     liveUrl: "https://propatradex.vercel.app/",
     githubUrl: "https://github.com/olamilekan5162/propatradex2.0",
-  },
-  {
-    title: "Pharmaceutical Inventory Management System",
-    description:
-      "EasiPharma is an Ai powered stock and inventory management system tailored for pharmaceutical businesses.",
-    tags: ["React", "Javascript", "Gemini AI", "Firebase"],
-    imageUrl: "/easipharma.png",
-    liveUrl: "https://easi-pharma.vercel.app/",
-    githubUrl: "https://github.com/olamilekan5162/EasiPharma",
   },
   {
     title: "Decentralised music platform",
