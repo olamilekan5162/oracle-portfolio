@@ -8,7 +8,7 @@ export const developerInfo = {
   image: "/headshot.jpg",
   email: "opeyemiolalekan481@gmail.com",
   github: "https://github.com/olamilekan5162",
-  linkedin: "https://linkedin.com/in/opeyemi-olalekan-10864523a",
+  linkedin: "https://linkedin.com/in/otemitope",
   twitter: "https://x.com/olamilekan5162",
   resumeUrl: "/temitope.pdf",
 };
