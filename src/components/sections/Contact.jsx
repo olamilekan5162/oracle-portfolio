@@ -46,7 +46,9 @@ export default function ContactSection() {
           setMessage("");
         },
         (error) => {
-          toast.error("Failed to send the message. Please try again later.");
+          toast.error(
+            `Couldn't send your message. Please try again, or reach out directly via ${developerInfo.email}.`
+          );
           console.log("FAILED...", error);
           setLoading(false);
         }
