@@ -1,4 +1,4 @@
-// import heroImage from "../../assets/headshot.png";
+// import heroImage from "../../assets/headshot.jpg";
 import { Download, Eye, Github, Linkedin, Twitter } from "lucide-react";
 import { developerInfo } from "../../lib/data";
 import Button from "../ui/Button";

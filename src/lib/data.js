@@ -5,7 +5,7 @@ export const developerInfo = {
   role: "Frontend Developer",
   tagline: "Building digital experiences, one line of code at a time.",
   bio: "I’m a passionate frontend developer who loves building interactive, responsive, and user-focused web applications using React, Tailwind, and modern JavaScript tools. I thrive on solving complex problems and turning ideas into beautiful, functional products.",
-  image: "/headshot.png",
+  image: "/headshot.jpg",
   email: "opeyemiolalekan481@gmail.com",
   github: "https://github.com/olamilekan5162",
   linkedin: "https://linkedin.com/in/otemitope",
